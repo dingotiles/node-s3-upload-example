@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dingodb/node-s3-upload-example#readme",
   "dependencies": {
     "cfenv": "^1.0.3",
+    "aws-sdk": "*",
     "express": "^4.13.4"
   },
   "scripts": {

@@ -1,3 +1,4 @@
 ---
 applications:
   - name: node-s3-example
+    buildpack: nodejs_buildpack

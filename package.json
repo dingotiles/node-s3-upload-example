@@ -24,5 +24,8 @@
   "dependencies": {
     "cfenv": "^1.0.3",
     "express": "^4.13.4"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

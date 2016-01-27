@@ -9,7 +9,8 @@ app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 
 
-/* Configure AWS sdk
+/*
+ * Configure AWS sdk
  */
 var s3creds = appEnv.getServiceCreds('node-s3-example-s3')
 aws.config.update({
@@ -20,7 +21,8 @@ aws.config.update({
 
 var BUCKET_NAME = s3creds.bucket;
 
-/* Set CORS Configuration for Bucket
+/*
+ * Set CORS Configuration for Bucket
  * to allow access from this apps URLs
  */
 (function() {
@@ -43,14 +45,16 @@ var BUCKET_NAME = s3creds.bucket;
   });
 })();
 
-/* Respond to GET requests to /.
+/*
+ * Respond to GET requests to /.
  * Upon request, render the 'index.html' web page in views/ directory.
  */
 app.get('/', function(req, res){
   res.render('index.html');
 });
 
-/* Respond to GET requests to /sign_s3.
+/*
+ * Respond to GET requests to /sign_s3.
  * Upon request, return JSON containing the temporarily-signed S3 request and the
  * anticipated URL of the image.
  */

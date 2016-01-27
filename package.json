@@ -1,0 +1,28 @@
+{
+  "name": "node-s3-upload-example",
+  "version": "0.1.0",
+  "description": "Example app to use s3 on cf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingodb/node-s3-upload-example.git"
+  },
+  "keywords": [
+    "s3",
+    "cf",
+    "node"
+  ],
+  "author": "Justin Carter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingodb/node-s3-upload-example/issues"
+  },
+  "homepage": "https://github.com/dingodb/node-s3-upload-example#readme",
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "^4.13.4"
+  }
+}

@@ -12,7 +12,7 @@ app.engine('html', require('ejs').renderFile);
 /*
  * Configure AWS sdk
  */
-var s3creds = appEnv.getServiceCreds('node-s3-example-s3')
+var s3creds = appEnv.getServiceCreds(/s3/)
 aws.config.update({
   accessKeyId: s3creds.access_key_id,
   secretAccessKey: s3creds.secret_access_key,

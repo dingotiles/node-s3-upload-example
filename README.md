@@ -15,7 +15,7 @@ Use [cf-env](https://github.com/cloudfoundry-community/node-cfenv) to access the
 The returned structure looks like this:
 ```JSON
 {
-  "username": "IAM_USER_NAME"
+  "username": "IAM_USER_NAME",
   "access_key_id": "AWS_ACCESS_KEY",
   "secret_access_key": "AWS_SECRET",
   "bucket": "BUCKET_NAME"
